@@ -4,7 +4,7 @@ version: 0.2
 env:
   variables:
     IMAGE_REPO_NAME: admin03-management
-    _PROJECT_NAME: Mangement
+    _PROJECT_NAME: admin03-management
 
 phases:
   install:
