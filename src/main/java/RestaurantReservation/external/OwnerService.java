@@ -12,7 +12,7 @@ import java.util.Date;
 /*@FeignClient(name="Owner", url="http://localhost:8082") */
 public interface OwnerService {
 
-    @RequestMapping(method= RequestMethod.GET, path="/postOwners")
+    @RequestMapping(method= RequestMethod.POST, path="/postOwners") //여기가 POST로 안되어있어서 안된거같아요 다시 한번 이렇게 적용해서 빌드해보실래요?넵.
     public void checkReservation(@RequestBody Owner owner);
 
 }
