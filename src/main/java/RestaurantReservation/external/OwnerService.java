@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="Owner", url="http://admin03-owner:8080")
+@FeignClient(name="admin03-owner", url="http://admin03-owner:8080")
 /*@FeignClient(name="Owner", url="http://localhost:8082") */
 public interface OwnerService {
 
-    @RequestMapping(method= RequestMethod.GET, path="/owners")
+    @RequestMapping(method= RequestMethod.GET, path="/postOwners")
     public void checkReservation(@RequestBody Owner owner);
 
 }
