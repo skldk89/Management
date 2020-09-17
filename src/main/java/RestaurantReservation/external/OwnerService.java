@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.Date;
 
-@FeignClient(name="Owner", url="http://Owner:8080")
+@FeignClient(name="Owner", url="http://admin03-owner:8080")
 /*@FeignClient(name="Owner", url="http://localhost:8082") */
 public interface OwnerService {
 
